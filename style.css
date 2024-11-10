@@ -21,39 +21,45 @@ body h3 {
 }
 
 .featured {
+    background-color: #0b9444;
     display: flex;
     flex-direction: column;
-    background-color: #0b9444;
-    width: auto;
     height: 50px;
+    overflow: hidden;
     position: relative;
+    width: auto;
     z-index: 1;
 }
 
 .disdiv {
-    background: none;
-    width: auto;
-    height: fit-content;
+    /* background: none; */
+    /* width: auto; */
+    /* height: fit-content; */
     position: relative;
-    top: -15px;
+    /* left: -100%; */
     animation-name: discount;
-    animation-duration: 12s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    /* animation-direction: alternate-reverse; */
 }
 
 .featured h3 {
     font-size: 2rem;
     color: white;
-    padding: 0.5rem;
-    position: relative;
-    left: 1280px;
-    top: 0.5px;
+    /* padding: 0.5rem; */
+    /* position: relative; */
+    /* left: 1280px; */
+    /* top: 0.5px; */
     font-weight: 800;
     filter: drop-shadow(0 5px 0.1px rgba(46, 45, 45, 0.6));
 }
 
 @keyframes discount {
-    from { left: 1280px; }
-    to { left: -2335px; }
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -100%;
+    }
 }
